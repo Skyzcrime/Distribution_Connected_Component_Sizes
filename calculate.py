@@ -24,7 +24,7 @@ def create_grid(coord_x, coord_y, distance):
     nb_points = len(coord_x)
     min_x, max_x = min_et_max(coord_x)
     min_y, max_y = min_et_max(coord_y)
-    taille_cellule = (distance)*0.7072  # trying to approach sqrt(2)
+    taille_cellule = (distance)*0.5  # trying to approach sqrt(2)
     # creation de grid après initialisation 
     grid =[[ [] for _ in range(int((max_y-min_y)/taille_cellule)+1)] for _ in range(int((max_x-min_x)/taille_cellule)+1)]
     # on remplit grid des points du fichier 
